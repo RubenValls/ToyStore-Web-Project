@@ -1,0 +1,11 @@
+.nav-link{
+    &:hover{
+        transform: scale(1.03);
+        transition: 0.75s;
+    }
+
+    &:not(:hover){
+        transform: scale(1);
+        transition: 0.75s;
+    }
+}
