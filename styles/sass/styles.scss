@@ -9,3 +9,92 @@
         transition: 0.75s;
     }
 }
+
+#rocket{
+    &:hover{
+        transform: rotate(360deg);
+        transition: 6s;
+    }
+
+    &:not(:hover){
+        transition: 6s;
+    }
+}
+
+#card{
+    &:hover{
+        transform: scale(1.03);
+        transition: 0.75s;
+    }
+
+    &:not(:hover){
+        transform: scale(1);
+        transition: 0.75s;
+    }
+}
+
+#rocketMoving{
+    animation: moveToLeft 6s linear infinite;
+    @keyframes moveToLeft {
+        0% {
+            transform: translateX(-100%);
+        }
+        25% {
+            transform: translateX(0%);
+        }
+        50% {
+            transform: translateX(100%);
+        }
+        75% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+}
+
+#blackBack{
+    &:hover{
+        animation: changeColor 10s linear infinite;
+        
+        @keyframes changeColor {
+            10% {
+                color: orange
+            }
+            25% {
+                color: yellow;
+            }
+            50% {
+                color:greenyellow;
+            }
+            75% {
+                color: green;
+            }
+            100% {
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+#product{
+    animation: upDown 7s linear infinite;
+    @keyframes upDown {
+        0% {
+            transform: translateY(0%);
+        }
+        10% {
+            transform: translateY(-5%);
+        }
+        30% {
+            transform: translateY(10%);
+        }
+        60% {
+            transform: translateY(25%);
+        }
+        100% {
+            transform: translateY(0%);
+        }
+    }
+}
