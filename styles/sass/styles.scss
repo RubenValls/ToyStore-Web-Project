@@ -1,13 +1,18 @@
-.nav-link{
+@mixin hoverNotHover{
     &:hover{
         transform: scale(1.03);
         transition: 0.75s;
+        color: #FFC107;
     }
 
     &:not(:hover){
         transform: scale(1);
         transition: 0.75s;
     }
+}
+
+.nav-link{
+    @include hoverNotHover();
 }
 
 #rocket{
@@ -22,43 +27,35 @@
 }
 
 #card{
-    &:hover{
-        transform: scale(1.03);
-        transition: 0.75s;
-    }
-
-    &:not(:hover){
-        transform: scale(1);
-        transition: 0.75s;
-    }
+    @include hoverNotHover();
 }
 
 #rocketMoving{
     animation: moveToLeft 6s linear infinite;
     @keyframes moveToLeft {
         0% {
-            transform: translateX(-100%);
+            transform: translateX(-80%);
         }
         25% {
             transform: translateX(0%);
         }
         50% {
-            transform: translateX(100%);
+            transform: translateX(80%);
         }
         75% {
             transform: translateX(0%);
         }
         100% {
-            transform: translateX(-100%);
+            transform: translateX(-80%);
         }
     }
 }
 
 #blackBack{
     &:hover{
-        animation: changeColor 10s linear infinite;
+        animation: changeColorB 10s linear infinite;
         
-        @keyframes changeColor {
+        @keyframes changeColorB {
             10% {
                 color: orange
             }
@@ -73,6 +70,30 @@
             }
             100% {
                 color: #FFFFFF;
+            }
+        }
+    }
+}
+
+#whiteBack{
+    &:hover{
+        animation: changeColorW 10s linear infinite;
+        
+        @keyframes changeColorW {
+            10% {
+                color: orange
+            }
+            25% {
+                color: rgb(87, 19, 19);
+            }
+            50% {
+                color:rgb(200, 11, 11);
+            }
+            75% {
+                color: rgb(87, 9, 34);
+            }
+            100% {
+                color: #212529;
             }
         }
     }
