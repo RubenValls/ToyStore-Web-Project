@@ -1,3 +1,6 @@
+.nav-link {
+  color: white;
+}
 .nav-link:hover {
   transform: scale(1.03);
   transition: 0.75s;
@@ -6,6 +9,14 @@
 .nav-link:not(:hover) {
   transform: scale(1);
   transition: 0.75s;
+}
+
+.navbar {
+  background-color: #4cb53c;
+}
+
+body {
+  background-color: rgb(241, 255, 249);
 }
 
 #rocket:hover {

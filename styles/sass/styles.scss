@@ -11,8 +11,19 @@
     }
 }
 
+$background: rgb(241, 255, 249);
+
 .nav-link{
     @include hoverNotHover();
+    color: white;
+}
+
+.navbar{
+    background-color: #4cb53c;
+}
+
+body{
+    background-color: $background;
 }
 
 #rocket{
