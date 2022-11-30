@@ -7,6 +7,9 @@ function startGame() {
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "white", 280, 40, "text");
     myGameArea.start();
+    const touch = document.getElementById('buttonGame');
+    touch.addEventListener('touchstart', accelerate(-0.2), false);
+    touch.addEventListener('touchend', accelerate(0.05), false);
 }
 
 var myGameArea = {
@@ -120,7 +123,3 @@ function everyinterval(n) {
 function accelerate(n) {
     myGamePiece.gravity = n;
 }
-
-const touch = document.getElementById('buttonGame');
-touch.addEventListener('pointerdown', accelerate(0.05));
-touch.addEventListener('pointerup', accelerate(-0.2));
