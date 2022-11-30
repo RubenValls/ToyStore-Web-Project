@@ -120,3 +120,7 @@ function everyinterval(n) {
 function accelerate(n) {
     myGamePiece.gravity = n;
 }
+
+const touch = document.getElementById('buttonGame');
+touch.addEventListener('touchstart', accelerate(0.05));
+touch.addEventListener('touchend', accelerate(-0.2));
