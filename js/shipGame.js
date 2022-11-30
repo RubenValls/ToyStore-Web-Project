@@ -8,8 +8,6 @@ function startGame() {
     myScore = new component("30px", "Consolas", "white", 280, 40, "text");
     myGameArea.start();
     const touch = document.getElementById('buttonGame');
-    touch.addEventListener('touchstart', accelerate(-0.2), false);
-    touch.addEventListener('touchend', accelerate(0.05), false);
 }
 
 var myGameArea = {
