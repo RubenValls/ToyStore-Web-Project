@@ -122,5 +122,5 @@ function accelerate(n) {
 }
 
 const touch = document.getElementById('buttonGame');
-touch.addEventListener('touchstart', accelerate(0.05));
-touch.addEventListener('touchend', accelerate(-0.2));
+touch.addEventListener('pointerdown', accelerate(0.05));
+touch.addEventListener('pointerup', accelerate(-0.2));
