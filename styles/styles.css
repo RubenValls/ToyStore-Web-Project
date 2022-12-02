@@ -1,5 +1,5 @@
 .nav-link {
-  color: white;
+  color: black;
 }
 .nav-link:hover {
   transform: scale(1.03);
@@ -12,18 +12,56 @@
 }
 
 .navbar {
-  background-color: #4cb53c;
+  background-color: white;
 }
 
 body {
-  background-color: rgb(241, 255, 249);
+  background-color: rgb(255, 247, 212);
 }
 
+#rocket {
+  animation: Turn 10s linear infinite;
+}
+@keyframes Turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 #rocket:hover {
   transform: rotate(360deg);
   transition: 6s;
 }
 #rocket:not(:hover) {
+  transition: 6s;
+}
+
+#newproduct {
+  position: relative;
+  z-index: -1;
+  animation: Pump 1.5s linear infinite;
+}
+@keyframes Pump {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#newproduct:hover {
+  transform: rotate(360deg);
+  transition: 6s;
+}
+#newproduct:not(:hover) {
   transition: 6s;
 }
 
@@ -38,7 +76,7 @@ body {
 }
 
 #rocketMoving {
-  animation: moveToLeft 6s linear infinite;
+  animation: moveToLeft 10s linear infinite;
 }
 @keyframes moveToLeft {
   0% {
@@ -48,7 +86,7 @@ body {
     transform: translateX(0%);
   }
   50% {
-    transform: translateX(80%);
+    transform: translateX(60%);
   }
   75% {
     transform: translateX(0%);
@@ -123,7 +161,7 @@ body {
 
 canvas {
   border: 1px solid #d3d3d3;
-  background-color: black;
+  background-image: url("../../sources/backgroundGAMES.jpg");
 }
 
 /*# sourceMappingURL=styles.css.map */
