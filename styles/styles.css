@@ -160,7 +160,7 @@ body {
 }
 
 canvas {
-  border: 1px solid #d3d3d3;
+  border: 1px solid black;
   background-image: url("../../sources/backgroundGAMES.jpg");
 }
 
