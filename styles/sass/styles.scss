@@ -78,6 +78,7 @@ body{
 
 #card{
     @include hoverNotHover();
+    background-color: $background;
 }
 
 #rocketMoving{
