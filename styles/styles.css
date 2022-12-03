@@ -164,7 +164,7 @@ body {
 
 canvas {
   border: 1px solid black;
-  background-image: url("../../sources/backgroundGAMES.jpg");
+  background-image: url("/sources/backgroundGames.jpg");
 }
 
 /*# sourceMappingURL=styles.css.map */
