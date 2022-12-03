@@ -163,8 +163,8 @@ body {
 }
 
 canvas {
-  border: 1px solid grey;
-  background-color: black;
+  border: 1px solid black;
+  background-image: url("/sources/backgroundGames.jpg");
 }
 
 /*# sourceMappingURL=styles.css.map */
