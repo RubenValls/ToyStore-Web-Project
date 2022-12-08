@@ -167,4 +167,16 @@ canvas {
   background-color: black;
 }
 
+#logo-contact {
+  animation: show 3.5s linear;
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
